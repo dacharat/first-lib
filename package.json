@@ -1,0 +1,19 @@
+{
+  "name": "jack-first-lib",
+  "version": "1.0.2",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:def": "tsc --allowJs false --declaration true",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version --release-as"
+  },
+  "author": "dacharat",
+  "license": "ISC",
+  "devDependencies": {
+    "standard-version": "^7.0.0",
+    "typescript": "^3.6.2"
+  }
+}
