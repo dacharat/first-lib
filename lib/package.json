@@ -1,0 +1,32 @@
+{
+    "name": "jack-first-lib",
+    "version": "1.0.11",
+    "description": "",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "bin": {
+        "jack-first-lib": "lib/index.js"
+    },
+    "scripts": {
+        "build": "npm-run-all --parallel build:lib build:def",
+        "build:lib": "tsc",
+        "build:def": "tsc --allowJs false --declaration true",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "release": "standard-version --release-as",
+        "lint": "tslint --project .",
+        "prepublish": "npm run build"
+    },
+    "author": "dacharat",
+    "license": "ISC",
+    "devDependencies": {
+        "commander": "^3.0.1",
+        "husky": "^3.0.5",
+        "lint-staged": "^9.2.5",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^1.18.2",
+        "standard-version": "^7.0.0",
+        "tslint": "^5.19.0",
+        "typescript": "^3.6.2",
+        "typescript-tslint-plugin": "^0.5.4"
+    }
+}
