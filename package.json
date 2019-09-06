@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "bin": {
-    "fuck-vue": "lib/index.ts"
+    "fuck-vue": "lib/index.js"
   },
   "scripts": {
     "build": "npm-run-all --parallel build:lib build:def",
