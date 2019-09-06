@@ -8,12 +8,16 @@
     "build": "tsc",
     "build:def": "tsc --allowJs false --declaration true",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "standard-version --release-as"
+    "release": "standard-version --release-as",
+    "lint": "tslint --project ."
   },
   "author": "dacharat",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^3.0.5",
     "standard-version": "^7.0.0",
-    "typescript": "^3.6.2"
+    "tslint": "^5.19.0",
+    "typescript": "^3.6.2",
+    "typescript-tslint-plugin": "^0.5.4"
   }
 }
